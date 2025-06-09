@@ -16,7 +16,8 @@ function App() {
     setCep({}); // <- Limpa ANTES de buscar
 
     try {
-      const response = await api.get(`${input}/json`);
+      const response = await api.get(`/api/${input}/json`);
+
       if (response.data.erro) {
         alert("CEP não encontrado!");
         setInput("");
