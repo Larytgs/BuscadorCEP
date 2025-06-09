@@ -8,21 +8,23 @@ function App() {
   const [cep, setCep] = useState("");
 
   async function handleSearch() {
-    //função assincrona
-
-    //ver se o usuario digitou algo
-    if (input === "") {
+    if (input.trim() === "") {
       alert("Preencha algum CEP!");
       return;
     }
 
+    setCep({}); // <- Limpa ANTES de buscar
+
     try {
-      //try: tentativa doq eu quero fazer, mas q pode dar errado
       const response = await api.get(`${input}/json`);
-      setCep(response.data);
+      if (response.data.erro) {
+        alert("CEP não encontrado!");
+        setInput("");
+        return;
+      }
+      setCep({ ...response.data }); // força novo objeto
       setInput("");
     } catch {
-      //caso der errado, faça isso:
       alert("Opss.. erro ao buscar o CEP.");
       setInput("");
     }
