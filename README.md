@@ -33,6 +33,7 @@ Este projeto me ajudou a:
 - Praticar integração com APIs externas e tratamento de dados dinâmicos.
 
 Foi feito um novo arquivo: vercel.json para funcionar o deploy na Vercel
+
 E no api.jsx, deixei a baseURL vazia
 
 <img src="public/buscadorCep.png"></img>
