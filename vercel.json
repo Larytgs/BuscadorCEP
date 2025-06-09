@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:cep/json",
+      "destination": "https://viacep.com.br/ws/:cep/json"
+    }
+  ]
+}
