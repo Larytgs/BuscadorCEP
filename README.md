@@ -1,7 +1,5 @@
 ✨ Projeto: Buscador de CEP com React
 
-<img src="public/buscadorCep.png"></img>
-
 Recentemente desenvolvi um Buscador de CEP usando React, onde o usuário insere o CEP desejado e recebe as informações de endereço, bairro, cidade e estado. Foi uma ótima oportunidade para reforçar conceitos importantes de desenvolvimento web e aprender boas práticas de UX.
 
 🚀 Tecnologias Utilizadas:
@@ -33,3 +31,5 @@ Este projeto me ajudou a:
 - Refletir sobre a importância da experiência do usuário e do feedback visual durante as buscas.
 - Compreender melhor como lidar com estados assíncronos em React.
 - Praticar integração com APIs externas e tratamento de dados dinâmicos.
+
+<img src="public/buscadorCep.png"></img>
